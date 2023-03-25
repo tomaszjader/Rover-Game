@@ -84,6 +84,7 @@ function moveRight() {
         newTd.appendChild(img);
     }
 }
+// obsługa ruchu łazika za pomocą klawiatury
 document.addEventListener("keydown", function (event) {
     if (event.code === "ArrowUp") {
         moveForward();
@@ -94,7 +95,7 @@ document.addEventListener("keydown", function (event) {
     } else if (event.code === "ArrowRight") {
         moveRight();
     }
-}); // obsługa ruchu łazika za pomocą klawiatury
+}); 
 // funkcja wyświetlająca historię ruchów łazika
 function showHistory() {
     alert(movesHistory.join(", "));
